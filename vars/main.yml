@@ -1,0 +1,61 @@
+---
+vscode_settingsdir: ~/testing
+vscode_tmpdir: ~/vscode_old
+brew_taps:
+  - jmespath/jmespath
+
+brew_packages:
+  # dev tools
+  - ansible
+  - git
+  - node
+  - yle-dl
+  # smarter cli
+  - bat
+  - prettyping
+  - diff-so-fancy
+  - htop
+  - p7zip
+  - docker
+  # from Taps
+  - openssh
+  - zsh
+
+cask_appdir: /Applications
+cask_packages:
+  - java
+  #
+  - firefox
+  - google-chrome
+  #
+  - iterm2
+  - the-unarchiver
+  - telegram
+  - slack
+  #
+  - lisanet-gimp
+  - xquartz
+  - inkscape
+  #
+  - spotify
+  - vlc
+  #
+  - intellij-idea
+  - visual-studio-code
+  - java
+  #
+  - sourcetree
+  #
+  - postman
+  #
+  - pgadmin4
+  # not found - sqldeveloper
+  #
+  - disk-inventory-x
+  - spectacle
+  - alfred
+  #
+#npm_modules:
+
+vscode_extensions:
+  - ms-vscode.Go

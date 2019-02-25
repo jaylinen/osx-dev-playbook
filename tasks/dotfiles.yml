@@ -1,0 +1,12 @@
+- name: Clone dotfiles
+  git: repo=git@github.com:jaylinen/dotfiles.git dest=~/dotfiles
+
+- name: Set bootstrap script permissions
+  file:
+    path: ~/dotfiles/bootstrap.sh
+    mode: "+x"
+
+- name: Run bootstrap script
+  script: ~/dotfiles/bootstrap.sh
+  register: ps
+# - debug: msg="{{ ps.stdout }}"

@@ -1,0 +1,18 @@
+- name: Create temporary folder for vscode settings
+  file:
+    path: "{{ vscode_tmpdir }}"
+    state: directory
+
+- name: Move existing vscode files to temporary folder
+  shell: "mv {{ vscode_settingsdir }}/* {{ vscode_tmpdir }}/"
+
+- name: Clone vscode settings
+  git: "repo=git@github.com:jaylinen/vscode-settings.git dest={{ vscode_settingsdir }}"
+
+- name: Move existing vscode files back
+  shell: "mv -n {{ vscode_tmpdir }}/* {{ vscode_settingsdir }}/"
+
+- name: Delete temporary folder
+  file:
+    path: "{{ vscode_tmpdir }}"
+    state: absent
