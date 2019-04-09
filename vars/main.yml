@@ -42,7 +42,6 @@ cask_packages:
   #
   - intellij-idea
   - visual-studio-code
-  - java
   #
   - sourcetree
   #
