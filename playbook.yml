@@ -5,13 +5,13 @@
   vars_files:
     - vars/main.yml
 
-  # pre_tasks:
-  #   - file: path=~/.ssh mode=0700 state=directory
-  #   - lineinfile: dest=~/.ssh/known_hosts create=yes state=present line="{{ lookup('pipe', 'ssh-keyscan -t rsa github.com') }}" regexp='^github.com'
+  pre_tasks:
+    - file: path=~/.ssh mode=0700 state=directory
+    - lineinfile: dest=~/.ssh/known_hosts create=yes state=present line="{{ lookup('pipe', 'ssh-keyscan -t rsa github.com') }}" regexp='^github.com'
 
   tasks:
-    # - name: generate ssh-key
-    #   command: creates=~/.ssh/id_rsa ssh-keygen -t rsa -b 4096 -f ~/.ssh/id_rsa -N ''
+    - name: generate ssh-key
+      command: creates=~/.ssh/id_rsa ssh-keygen -t rsa -b 4096 -f ~/.ssh/id_rsa -N ''
 
     - name: upgrade homebrew packages
       homebrew: update_homebrew=yes upgrade_all=yes
@@ -42,5 +42,5 @@
 
     - include: tasks/vscode.yml
       vars:
-        vscode_settingsdir: ~/testing #~/Library/Application\ Support/Code/User
-        vscode_tmpdir: ~/vscode_old
+        vscode_settingsdir: "~/Library/Application Support/Code/User"
+        vscode_tmpdir: "~/vscode_old"

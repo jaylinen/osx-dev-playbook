@@ -4,13 +4,18 @@
     state: directory
 
 - name: Move existing vscode files to temporary folder
-  shell: "mv {{ vscode_settingsdir }}/* {{ vscode_tmpdir }}/"
+  shell: mv {{ vscode_settingsdir | regex_replace (' ','\ ') }}/* {{vscode_tmpdir}}
+
+- name: Delete vscode folder
+  file:
+    path: "{{ vscode_settingsdir }}"
+    state: absent
 
 - name: Clone vscode settings
   git: "repo=git@github.com:jaylinen/vscode-settings.git dest={{ vscode_settingsdir }}"
 
 - name: Move existing vscode files back
-  shell: "mv -n {{ vscode_tmpdir }}/* {{ vscode_settingsdir }}/"
+  shell: mv -n {{ vscode_tmpdir }}/* {{ vscode_settingsdir | regex_replace (' ','\ ') }}
 
 - name: Delete temporary folder
   file:

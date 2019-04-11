@@ -8,5 +8,3 @@
 
 - name: Run bootstrap script
   script: ~/dotfiles/bootstrap.sh
-  register: ps
-# - debug: msg="{{ ps.stdout }}"
