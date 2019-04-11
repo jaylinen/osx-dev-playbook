@@ -44,3 +44,20 @@
       vars:
         vscode_settingsdir: "~/Library/Application Support/Code/User"
         vscode_tmpdir: "~/vscode_old"
+        
+  - include: tasks/zsh.yml
+
+    - name: Create folder for iterm related stuff
+      file:
+        path: "~/.iterm2"
+        state: directory
+
+    - name: Clone terminal themes
+      git:
+        repo: https://github.com/mbadolato/iTerm2-Color-Schemes
+        dest: "~/.iterm2/iTerm2-Color-Schemes"
+
+    - name: Clone city-lights theme
+      git:
+        repo: https://github.com/ruimarinho/iterm2-city-lights
+      dest: "~/.iterm2/iterm2-city-lights"
