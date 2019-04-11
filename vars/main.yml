@@ -53,4 +53,12 @@ cask_packages:
 #npm_modules:
 
 vscode_extensions:
-  - ms-vscode.Go
+  - sveggiani.vscode-field-lights
+  - dbaeumer.vscode-eslint
+  - eamodio.gitlens
+  - esbenp.prettier-vscode
+  - xabikos.javascriptsnippets
+  - wallabyjs.quokka-vscode
+  - christian-kohler.path-intellisense
+  - coenraads.bracket-pair-colorizer-2
+  - oderwat.indent-rainbow
