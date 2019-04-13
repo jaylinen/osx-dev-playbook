@@ -49,6 +49,7 @@ cask_packages:
   - disk-inventory-x
   - spectacle
   - alfred
+  - workflowy
   #
 #npm_modules:
 
