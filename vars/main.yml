@@ -1,6 +1,4 @@
 ---
-vscode_settingsdir: ~/testing
-vscode_tmpdir: ~/vscode_old
 brew_taps:
   - jmespath/jmespath
 
