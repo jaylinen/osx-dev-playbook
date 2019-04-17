@@ -49,7 +49,9 @@ cask_packages:
   - alfred
   - workflowy
   #
-#npm_modules:
+
+npm_modules:
+  - git-run
 
 vscode_extensions:
   - sveggiani.vscode-field-lights
