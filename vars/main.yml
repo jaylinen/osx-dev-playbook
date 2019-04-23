@@ -15,6 +15,7 @@ brew_packages:
   - htop
   - p7zip
   - docker
+  - docker-compose
   # from Taps
   - openssh
   - zsh
