@@ -18,6 +18,7 @@ brew_packages:
   # from Taps
   - openssh
   - zsh
+  - awscli
 
 cask_appdir: /Applications
 cask_packages:
