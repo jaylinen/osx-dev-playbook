@@ -19,6 +19,7 @@ brew_packages:
   - openssh
   - zsh
   - awscli
+  - jq
 
 cask_appdir: /Applications
 cask_packages:
