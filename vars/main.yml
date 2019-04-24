@@ -21,6 +21,7 @@ brew_packages:
   - zsh
   - awscli
   - jq
+  - ctop
 
 cask_appdir: /Applications
 cask_packages:
