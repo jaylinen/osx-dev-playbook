@@ -46,6 +46,7 @@ cask_packages:
   - docker
   #
   - pgadmin4
+  - robo-3t
   # not found - sqldeveloper
   #
   - disk-inventory-x
