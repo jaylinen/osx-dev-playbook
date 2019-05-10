@@ -59,6 +59,7 @@ cask_packages:
 npm_modules:
   - git-run
   - awsp
+  - serverless
 
 vscode_extensions:
   - sveggiani.vscode-field-lights
