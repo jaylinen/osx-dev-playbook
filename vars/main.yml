@@ -60,6 +60,7 @@ npm_modules:
   - git-run
   - awsp
   - serverless
+  - npm-check-updates
 
 vscode_extensions:
   - christian-kohler.path-intellisense
