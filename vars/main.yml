@@ -62,12 +62,25 @@ npm_modules:
   - serverless
 
 vscode_extensions:
-  - sveggiani.vscode-field-lights
+  - christian-kohler.path-intellisense
+  - CoenraadS.bracket-pair-colorizer-2
   - dbaeumer.vscode-eslint
   - eamodio.gitlens
   - esbenp.prettier-vscode
-  - xabikos.javascriptsnippets
-  - wallabyjs.quokka-vscode
-  - christian-kohler.path-intellisense
-  - coenraads.bracket-pair-colorizer-2
+  - hbenl.vscode-mocha-test-adapter
+  - hbenl.vscode-test-explorer
+  - HookyQR.beautify
+  - hoovercj.vscode-power-mode
+  - mechatroner.rainbow-csv
+  - ms-azuretools.vscode-docker
+  - ms-vscode-remote.remote-containers
+  - ms-vscode.test-adapter-converter
+  - ms-vsliveshare.vsliveshare
   - oderwat.indent-rainbow
+  - Orta.vscode-jest
+  - sveggiani.vscode-field-lights
+  - ue.alphabetical-sorter
+  - xabikos.JavaScriptSnippets
+  - xabikos.ReactSnippets
+  - yummygum.city-lights-theme
+  - ZainChen.json
