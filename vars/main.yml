@@ -5,6 +5,7 @@ brew_taps:
 brew_packages:
   # dev tools
   - ansible
+  - 1password
   - awsume
   - git
   - node
