@@ -25,6 +25,7 @@ brew_packages:
   - awscli
   - jq
   - ctop
+  - microsoft-teams
 
 cask_appdir: /Applications
 cask_packages:
