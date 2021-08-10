@@ -26,6 +26,7 @@ brew_packages:
   - jq
   - ctop
   - microsoft-teams
+  - postgres
 
 cask_appdir: /Applications
 cask_packages:
