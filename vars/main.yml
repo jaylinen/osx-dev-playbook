@@ -27,6 +27,7 @@ brew_packages:
   - ctop
   - microsoft-teams
   - postgres
+  - sequel-pro
 
 cask_appdir: /Applications
 cask_packages:
